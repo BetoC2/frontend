@@ -1,7 +1,7 @@
 @import 'theme';
 @import url($font-url);
 
-@mixin text-template {
+.text-template {
     margin: 0;
     line-height: 1.2;
 }
@@ -15,12 +15,27 @@
     margin: 0.5rem 0;
 }
 
+@mixin responsive($width) {
+    @if $width ==mobile {
+        width: 100vw;
+    }
+
+    @else if $width ==tablet {
+        width: 30vw;
+    }
+
+    @else {
+        width: 25vw;
+    }
+}
+
 body {
     width: 100%;
     font-family: $font-name, sans-serif;
     font-optical-sizing: auto;
     margin: 0;
     padding: 0;
+
 }
 
 p {
@@ -37,14 +52,14 @@ h6 {
 }
 
 .container {
-    display: flex; // Hacer que los elementos internos se alineen en fila.
-    justify-content: space-between; // Distribuir el espacio entre los elementos.
-    flex-wrap: wrap; // Para que se acomoden correctamente en pantallas más pequeñas.
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     box-sizing: border-box;
 }
 
 .profile {
-    width: 25%;
+    @include responsive(desktop); // Tamaño en desktop
     padding: 1rem;
     background-color: $secondary-color;
     box-sizing: border-box;
@@ -53,15 +68,37 @@ h6 {
         max-width: 60%;
         border-radius: 50%;
     }
+}
 
-    width: 100vw;
-
+.center-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .details {
     width: 75%;
     padding: 1rem;
     box-sizing: border-box;
+
+    h2::after {
+        @include line;
+        height: 1px;
+    }
+
+}
+
+.education {
+    display: flex;
+    justify-content: space-between;
+
+    .education-title {
+        width: 30%;
+    }
+
+    .education-description {
+        width: 70%;
+    }
 }
 
 header {
@@ -74,15 +111,40 @@ header {
     padding: 1rem;
 
     h1 {
-        @include text-template;
+        @extend .text-template;
         margin: 10px 0;
     }
 
     h3 {
-        @include text-template;
+        @extend .text-template;
 
         &::after {
-            @include line
+            @include line;
         }
+    }
+}
+
+// Responsivo
+@media (max-width: 1000px) {
+    .profile {
+        @include responsive(tablet);
+    }
+
+    .details {
+        width: 70vw;
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .profile {
+        @include responsive(mobile);
+    }
+
+    .details {
+        width: 100vw;
     }
 }

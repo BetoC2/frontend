@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap");
+.text-template, header h3, header h1 {
+  margin: 0;
+  line-height: 1.2;
+}
+
 body {
   width: 100%;
   font-family: "Onest", sans-serif;
@@ -28,7 +33,7 @@ h6 {
 }
 
 .profile {
-  width: 25%;
+  width: 25vw;
   padding: 1rem;
   background-color: #ecf4ff;
   box-sizing: border-box;
@@ -38,10 +43,36 @@ h6 {
   border-radius: 50%;
 }
 
+.center-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .details {
   width: 75%;
   padding: 1rem;
   box-sizing: border-box;
+}
+.details h2::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #213d62;
+  margin: 0.5rem 0;
+  height: 1px;
+}
+
+.education {
+  display: flex;
+  justify-content: space-between;
+}
+.education .education-title {
+  width: 30%;
+}
+.education .education-description {
+  width: 70%;
 }
 
 header {
@@ -54,13 +85,7 @@ header {
   padding: 1rem;
 }
 header h1 {
-  margin: 0;
-  line-height: 1.2;
   margin: 10px 0;
-}
-header h3 {
-  margin: 0;
-  line-height: 1.2;
 }
 header h3::after {
   content: "";
@@ -69,6 +94,26 @@ header h3::after {
   height: 2px;
   background-color: #213d62;
   margin: 0.5rem 0;
+}
+
+@media (max-width: 1000px) {
+  .profile {
+    width: 30vw;
+  }
+  .details {
+    width: 70vw;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    flex-direction: column;
+  }
+  .profile {
+    width: 100vw;
+  }
+  .details {
+    width: 100vw;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
