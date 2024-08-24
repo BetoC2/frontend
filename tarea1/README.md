@@ -3,13 +3,17 @@
 To install dependencies:
 
 ```bash
-bun install
+npm install
 ```
 
-To run:
+To generate styles:
 
 ```bash
-bun run index.ts
+npm run estilos
 ```
 
-This project was created using `bun init` in bun v1.1.24. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+To generate styles for development: 
+
+```bash
+npm run estilos:dev
+```
