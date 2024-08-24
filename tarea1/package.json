@@ -1,0 +1,17 @@
+{
+  "name": "cv",
+  "version": "0.0.1",
+  "description": "simple cv with sass",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "sass": "1.77.8"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "estilos:dev": "sass src/styles/:dist/styles/ --watch",
+    "estilos": "sass src/styles/:dist/styles/ --no-source-map"
+  },
+  "author": "Alberto",
+  "license": "ISC"
+}
