@@ -1,4 +1,4 @@
-# tarea1
+# tarea2
 
 To install dependencies:
 
@@ -6,14 +6,14 @@ To install dependencies:
 npm install
 ```
 
-To generate styles:
+To generate the bundle on `/dist`:
 
 ```bash
-npm run estilos
+npm run build
 ```
 
-To generate styles for development: 
+To generate a development environment: 
 
 ```bash
-npm run estilos:dev
+npm run dev
 ```

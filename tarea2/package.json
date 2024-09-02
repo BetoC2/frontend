@@ -18,7 +18,8 @@
   },
   "scripts": {
     "dev": "gulp dev && gulp serve",
-    "build": "gulp"
+    "build": "gulp",
+    "serve": "gulp && gulp serve"
   },
   "author": "Alberto",
   "license": "ISC"

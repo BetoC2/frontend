@@ -100,31 +100,9 @@ fetch('./data.json')
             hobbies.insertAdjacentElement('afterend', p);
         }
 
-        const contact = document.getElementById('contact');
-        if (contact) {
-            const div = document.createElement('div');
-            div.innerHTML = `
-            <form id="contact-form" action="https://formsubmit.co/${data.mail}" method="POST">
-                <input type="hidden" name="_subject" value="Nuevo mensaje de contacto" />
-                <input type="hidden" name="_next" value="https://your-website.com/thank-you" />
-                <input type="hidden" name="_captcha" value="false" />
-                <div>
-                    <label for="name">Nombre:</label>
-                    <input type="text" id="name" name="name" required />
-                </div>
-                <div>
-                    <label for="email">Correo electrónico:</label>
-                    <input type="email" id="email" name="email" required />
-                </div>
-                <div>
-                    <label for="message">Mensaje:</label>
-                    <textarea id="message" name="message" rows="4" required></textarea>
-                </div>
-                <button type="submit">Enviar</button>
-            </form>
-            `
-
-            contact.insertAdjacentElement('afterend', div)
+        const contactForm = document.getElementById('contact-form') as HTMLFormElement;
+        if (contactForm) {
+            contactForm.action = `https://formsubmit.co/${data.mail}`
         }
     })
     .catch(error => console.error('Error fetching data:', error));
