@@ -8,7 +8,7 @@ npm install
 
 ### Para generar el bundle en `/dist`:
 
-> [!WARNING]A tener en cuenta
+> [!WARNING]
 > Si se abre directamente el archivo `index.html` la página web no funcionará bien, para esto se recomienda utilizar un servidor local, utilizar el entorno de desarrollo o utilizar el comando `npm run serve` 
 
 ```bash
