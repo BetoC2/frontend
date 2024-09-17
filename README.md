@@ -1,7 +1,3 @@
-node_modules/
-bun.lockb
-dist/
-
 # See https://docs.github.com/get-started/getting-started-with-git/ignoring-files for more about ignoring files.
 
 # Compiled output

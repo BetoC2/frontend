@@ -1,0 +1,20 @@
+<div id="container">
+  <div id="memo">
+    <!-- Recorremos las cartas utilizando la nueva sintaxis for -->
+    @for (card of cards; track $index) {
+    <div class="card" (click)="flipCard($index)">
+      <!-- Mostramos la imagen de la carta si está volteada o emparejada, de lo contrario mostramos la parte trasera -->
+      <img [src]="card.isFlipped || card.isMatched ? card.image : backFace" alt="card image" />
+    </div>
+    }
+  </div>
+
+  <!-- Mostramos el número de intentos -->
+  <p>Intentos: {{ attempts }}</p>
+
+  <!-- Mostramos el mensaje de juego terminado si el juego ha terminado -->
+  @if (isGameOver) {
+  <p>¡Felicidades! Has encontrado todos los pares en {{ attempts }} intentos.</p>
+  <button (click)="resetGame()">Jugar de nuevo</button>
+  }
+</div>

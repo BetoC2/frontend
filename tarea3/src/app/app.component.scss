@@ -1,0 +1,39 @@
+#container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#memo {
+  height: 100vh;
+  max-height: 700px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+button {
+  font-size: 1.5rem;
+}
+
+.card {
+  width: 120px;
+  height: 190px;
+  position: relative;
+  margin: 2rem;
+
+  img {
+    width: 120px;
+    height: 190px;
+    object-fit: cover;
+
+  }
+}
