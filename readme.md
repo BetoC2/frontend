@@ -3,3 +3,5 @@
 Tarea https://github.com/BetoC2/frontend/pull/1
 
 Tarea https://github.com/BetoC2/frontend/pull/2
+
+Tarea https://github.com/BetoC2/frontend/pull/3
