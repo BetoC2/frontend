@@ -1,0 +1,20 @@
+ul {
+  list-style-type: none;
+  padding: 0 20px 20px 20px;
+  
+  li {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    border-radius: 15px;
+
+    &:hover {
+      filter: brightness(90%);
+    }
+  }
+
+  .selected {
+    background-color: lightblue;
+  }
+}
