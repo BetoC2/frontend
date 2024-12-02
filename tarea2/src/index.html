@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV de Alberto: Desarrollador fullstack</title>
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+
+<body>
+    <header id="header">
+    </header>
+
+    <div class="container">
+        <section class="profile" id="profile">
+        </section>
+
+        <div class="details" id="details">
+            <h2>Experiencia en educación</h2>
+            <div class="education" id="education">
+            </div>
+
+            <h2 id="experience">Experiencia Laboral</h2>
+            <h2 id="proyects">Proyectos</h2>
+            <h2 id="skills">Habilidades</h2>
+            <h2 id="hobbies">Pasatiempos</h2>
+            <h2 id="contact">Contáctame</h2>
+            <form id="contact-form" method="POST">
+                <input type="hidden" name="_subject" value="Nuevo mensaje de contacto" />
+                <input type="hidden" name="_captcha" value="false" />
+                <div>
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required />
+                </div>
+                <div>
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required />
+                </div>
+                <div>
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+            </section>
+        </div>
+    </div>
+
+</body>
+<script type="module" src="./scripts/main.js"></script>
+
+</html>

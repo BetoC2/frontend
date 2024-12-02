@@ -1,0 +1,56 @@
+{
+    "name": "Alberto Renteria Camacho",
+    "sub_title": "Full-stack developer",
+    "education": [
+        {
+            "place": "ITESO",
+            "year": "Actualmente...",
+            "description": "Estudio la carrera de Ingeniería en Sistemas Computacionales en el ITESO, donde he aprendido a programar en varios lenguajes y a trabajar en equipo. Actualmente estoy en el 7mo semestre y mi fecha de graduación es diciembre del 2025."
+        }
+    ],
+    "experience_default": "He participado en varios proyectos académicos que simulan entornos de trabajo profesional, colaborando en equipos multidisciplinarios para el desarrollo de software. Aunque actualmente no estoy trabajando, busco oportunidades para crecer en mi carrera como desarrollador Full-stack.",
+    "proyects": [
+        {
+            "name": "THE game - Juego rogue-like elaborado en C:",
+            "description": "Es un juego de aventuras en el que el jugador debe avanzar por un laberinto y enfrentarse a enemigos. Este juego fue creado en C utilizando la librería Raylib en colaboración con @YANDR0 y @Maigol193."
+        }
+    ],
+    "skills": [
+        "Trabajo en equipo",
+        "Comunicación efectiva",
+        "Adaptabilidad",
+        "Solución de problemas",
+        "Organización"
+    ],
+    "Hobbies": "Programar, Leer, Cocinar, Videojuegos",
+    "profile": {
+        "img": "./assets/logo.webp",
+        "about": "Estudiante de Ingeniería en sistemas computacionales y apasionado por la programación de Guadalajara, México 🇲🇽. Especializado en el desarrollo de aplicaciones escalables y seguras.",
+        "alt": "Foto de perfil"
+    },
+    "contact_info": [
+        {
+            "title": "Ciudad",
+            "value": "Guadalajara"
+        },
+        {
+            "title": "Teléfono",
+            "value": "+52 33 2958 2572"
+        },
+        {
+            "title": "Correo",
+            "value": "renteria.alberto.c@gmail.com"
+        }
+    ],
+    "technologies": [
+        "TypeScript",
+        "JavaScript",
+        "Node.js",
+        "HTML",
+        "CSS",
+        "Astro",
+        "Python",
+        "C++"
+    ],
+    "mail": "renteria.alberto.c@gmail.com"
+}
